@@ -1,61 +1,20 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf Világ</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golf Simulator</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>⛳ Golf Világ</h1>
-    <nav>
-        <a href="#about">Mi az a golf?</a>
-        <a href="#courses">Pályák</a>
-        <a href="#contact">Kapcsolat</a>
-    </nav>
-</header>
+<h1>⛳ Golf Simulator</h1>
+<p>Kattints a labdára, húzd vissza, majd engedd el!</p>
 
-<section id="hero">
-    <h2>Fedezd fel a golf világát</h2>
-    <p>Elegancia, precizitás és nyugalom egy sportban.</p>
-</section>
-
-<section id="about">
-    <h2>Mi az a golf?</h2>
-    <p>
-        A golf egy szabadtéri sport, ahol a cél, hogy a labdát minél kevesebb ütésből a lyukba juttasd.
-        A világ egyik legnyugodtabb és legtechnikásabb sportja.
-    </p>
-</section>
-
-<section id="courses">
-    <h2>Népszerű golfpályák</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>St Andrews</h3>
-            <p>A világ egyik leghíresebb pályája Skóciában.</p>
-        </div>
-        <div class="card">
-            <h3>Augusta National</h3>
-            <p>A Masters Tournament otthona.</p>
-        </div>
-        <div class="card">
-            <h3>Pebble Beach</h3>
-            <p>Gyönyörű tengerparti pálya Kaliforniában.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Kapcsolat</h2>
-    <p>Írj nekünk: golf@email.com</p>
-</section>
-
-<footer>
-    <p>© 2026 Golf Világ</p>
-</footer>
+<canvas id="game" width="600" height="300"></canvas>
+<br>
+<button onclick="resetGame()">Újra</button>
 
 <script src="script.js"></script>
 </body>
